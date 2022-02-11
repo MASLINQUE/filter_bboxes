@@ -1,6 +1,8 @@
 package main
 
-import "math"
+import (
+	"math"
+)
 
 func Filter(bbox []float64, thresh map[string]float64) bool {
 

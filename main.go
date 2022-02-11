@@ -21,7 +21,7 @@ var diag_thresh = flag.Float64("diag_thresh", 0, "Diag filter 0-1.5")
 func main() {
 
 	// open output file
-
+	flag.Parse()
 	// make a write buffer
 	logrus.SetLevel(logrus.DebugLevel)
 	s := bufio.NewScanner(os.Stdin)
