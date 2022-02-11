@@ -16,8 +16,6 @@ var widht_thresh = flag.Float64("widht_thresh", 0, "Widht filter 0-1")
 var height_thresh = flag.Float64("height_thresh", 0, "Height filter 0-1")
 var diag_thresh = flag.Float64("diag_thresh", 0, "Diag filter 0-1.5")
 
-// var scale_both = flag.Bool("scale both", true, "If true, scale w and h by w value")
-
 func main() {
 
 	// open output file
