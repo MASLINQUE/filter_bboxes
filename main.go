@@ -45,11 +45,9 @@ func expand(reqdata []byte) {
 		fmt.Println(string(reqdata))
 		return
 	}
-	itemsArray := []gjson.Result{}
-	itemsArray = append(itemsArray, items.Array()...)
 	responseStringArray := []string{}
 
-	for _, item := range itemsArray {
+	for _, item := range items.Array() {
 		item_str := item.String()
 		bbox := []float64{}
 		item.Get("bbox").ForEach(func(key, value gjson.Result) bool {
